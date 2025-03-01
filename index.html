@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kidCalc - Fun Calculator for Kids</title>
+    <link rel="stylesheet" href="theme-fun.css" />
+    <link rel="stylesheet" href="theme-nature.css" />
+    <link rel="stylesheet" href="theme-space.css" />
+    <link rel="stylesheet" href="Default.css" />
+  </head>
+  <body>
+    <!-- Information Bar -->
+    <header class="info-bar">
+      <div class="logo">
+        <h1>kidCalc</h1>
+        <p>Making math fun for children!</p>
+      </div>
+      <nav class="theme-selector">
+        <p>Choose a theme:</p>
+        <button id="theme-default" class="theme-btn active">Default</button>
+        <button id="theme-fun" class="theme-btn">Fun</button>
+        <button id="theme-space" class="theme-btn">Space</button>
+        <button id="theme-nature" class="theme-btn">Nature</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- Login Form Section -->
+      <section class="login-form">
+        <h2>Login to Save Your Progress</h2>
+        <form>
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+          <p class="signup-link">
+            Don't have an account? <a href="#">Sign up</a>
+          </p>
+        </form>
+      </section>
+
+      <!-- kidCalc Interface -->
+      <section class="calculator-container">
+        <div class="calculator">
+          <div class="calculator-display">
+            <div class="problem-display">5 + 3 = ?</div>
+            <div class="answer-display">8</div>
+          </div>
+          <div class="calculator-keypad">
+            <div class="calculator-row">
+              <button class="calc-btn">7</button>
+              <button class="calc-btn">8</button>
+              <button class="calc-btn">9</button>
+              <button class="calc-btn operator">+</button>
+            </div>
+            <div class="calculator-row">
+              <button class="calc-btn">4</button>
+              <button class="calc-btn">5</button>
+              <button class="calc-btn">6</button>
+              <button class="calc-btn operator">-</button>
+            </div>
+            <div class="calculator-row">
+              <button class="calc-btn">1</button>
+              <button class="calc-btn">2</button>
+              <button class="calc-btn">3</button>
+              <button class="calc-btn operator">×</button>
+            </div>
+            <div class="calculator-row">
+              <button class="calc-btn">0</button>
+              <button class="calc-btn">.</button>
+              <button class="calc-btn equal">=</button>
+              <button class="calc-btn operator">÷</button>
+            </div>
+            <div class="calculator-row">
+              <button class="calc-btn clear">Clear</button>
+              <button class="calc-btn next">Next Problem</button>
+            </div>
+          </div>
+        </div>
+        <div class="calculator-info">
+          <div class="info-card">
+            <h3>Learning Progress</h3>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 70%"></div>
+            </div>
+            <p>Level 3: Addition and Subtraction</p>
+          </div>
+          <div class="decoration-image">
+            <!-- Theme-specific decorative image will be added here via CSS -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 kidCalc - Making math fun and easy for children</p>
+    </footer>
+
+    <script>
+      // Theme switching functionality
+      const themeButtons = document.querySelectorAll(".theme-btn");
+      const body = document.body;
+
+      themeButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          // Remove active class from all buttons
+          themeButtons.forEach((btn) => btn.classList.remove("active"));
+
+          // Add active class to clicked button
+          button.classList.add("active");
+
+          // Remove all theme classes from body
+          body.classList.remove("theme-fun", "theme-space", "theme-nature");
+
+          // Add the selected theme class if not default
+          const themeId = button.id;
+          if (themeId !== "theme-default") {
+            body.classList.add(themeId);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+/* theme-fun.css - Fun Theme for kidCalc */
+
+body.theme-fun {
+    background-color: #ffecb3;
+    color: #5d4037;
+    background-image: url('../images/kidcalc/fun-background.png');
+    background-repeat: repeat;
+}
+
+/* Info Bar Styles */
+body.theme-fun .info-bar {
+    background-color: #ff6f00;
+    color: white;
+}
+
+body.theme-fun .theme-btn {
+    background-color: #ff8f00;
+}
+
+body.theme-fun .theme-btn:hover {
+    background-color: #ff6f00;
+}
+
+body.theme-fun .theme-btn.active {
+    background-color: white;
+    color: #ff6f00;
+    border: 2px solid #ff6f00;
+}
+
+/* Login Form Section */
+body.theme-fun .login-form {
+    background-color: #fff8e1;
+    border: 3px solid #ffb300;
+    border-radius: 15px;
+}
+
+body.theme-fun .login-form h2 {
+    color: #ff8f00;
+}
+
+body.theme-fun .form-group input {
+    border: 2px solid #ffca28;
+    background-color: white;
+}
+
+body.theme-fun .login-btn {
+    background-color: #ffb300;
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+body.theme-fun .login-btn:hover {
+    background-color: #ff8f00;
+}
+
+/* Calculator Styles */
+body.theme-fun .calculator {
+    background-color: #fff8e1;
+    border: 3px solid #ffb300;
+    border-radius: 15px;
+}
+
+body.theme-fun .calculator-display {
+    background-color: white;
+    border: 2px solid #ffca28;
+}
+
+body.theme-fun .problem-display {
+    color: #ff8f00;
+    font-weight: bold;
+}
+
+body.theme-fun .answer-display {
+    color: #e65100;
+}
+
+body.theme-fun .calc-btn {
+    background-color: #ffe082;
+    border: 2px solid #ffca28;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #5d4037;
+}
+
+body.theme-fun .calc-btn:hover {
+    background-color: #ffca28;
+}
+
+body.theme-fun .calc-btn.operator {
+    background-color: #ff9800;
+    color: white;
+}
+
+body.theme-fun .calc-btn.equal {
+    background-color: #8bc34a;
+    color: white;
+}
+
+body.theme-fun .calc-btn.clear {
+    background-color: #f44336;
+    color: white;
+}
+
+body.theme-fun .calc-btn.next {
+    background-color: #9c27b0;
+    color: white;
+}
+
+body.theme-fun .info-card {
+    background-color: #fff8e1;
+    border: 3px solid #ffb300;
+    border-radius: 15px;
+}
+
+body.theme-fun .info-card h3 {
+    color: #ff8f00;
+}
+
+body.theme-fun .progress-bar {
+    background-color: #ffe082;
+    border: 2px solid #ffca28;
+}
+
+body.theme-fun .progress-fill {
+    background-color: #8bc34a;
+}
+
+body.theme-fun .decoration-image {
+    background-image: url('../images/kidcalc/fun-decoration.png');
+}
+
+/* Footer Styles */
+body.theme-fun footer {
+    background-color: #ff6f00;
+}

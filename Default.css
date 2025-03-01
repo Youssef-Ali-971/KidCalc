@@ -1,0 +1,313 @@
+/* kidcalc.css - Default CSS for kidCalc */
+
+/* Import theme CSS files */
+@import url('theme-fun.css');
+@import url('theme-space.css');
+@import url('theme-nature.css');
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    transition: all 0.2s ease;
+}
+
+/* Info Bar Styles */
+.info-bar {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.theme-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.theme-btn {
+    background-color: #2980b9;
+    color: white;
+    border: 2px solid transparent;
+}
+
+.theme-btn:hover {
+    background-color: #1c6ea4;
+}
+
+.theme-btn.active {
+    background-color: white;
+    color: #3498db;
+    border: 2px solid #3498db;
+}
+
+/* Container Layout */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+/* Login Form Section */
+.login-form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #2980b9;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+/* Calculator Styles */
+.calculator-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.calculator {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-display {
+    background-color: #ecf0f1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.problem-display {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    margin-bottom: 5px;
+}
+
+.answer-display {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.calculator-keypad {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calculator-row {
+    display: flex;
+    gap: 10px;
+}
+
+.calc-btn {
+    flex: 1;
+    height: 50px;
+    background-color: #ecf0f1;
+    border: 1px solid #ddd;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc-btn:hover {
+    background-color: #ddd;
+}
+
+.calc-btn.operator {
+    background-color: #f39c12;
+    color: white;
+}
+
+.calc-btn.equal {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.calc-btn.clear {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.calc-btn.next {
+    background-color: #9b59b6;
+    color: white;
+}
+
+.calculator-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+    margin-bottom: 15px;
+    color: #3498db;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #2ecc71;
+}
+
+.decoration-image {
+    background-image: url('../images/kidcalc/default-decoration.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .calculator-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .theme-selector {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .calculator-row {
+        flex-wrap: wrap;
+    }
+    
+    .calc-btn {
+        min-width: 70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .calculator-keypad {
+        gap: 5px;
+    }
+    
+    .calculator-row {
+        gap: 5px;
+    }
+    
+    .calc-btn {
+        height: 40px;
+        font-size: 1rem;
+        min-width: 60px;
+    }
+}

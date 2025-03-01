@@ -1,0 +1,146 @@
+/* theme-space.css - Space Theme for kidCalc */
+
+body.theme-space {
+  background-color: #0c1445;
+  color: #e0e0ff;
+  background-image: url("https://www.istockphoto.com/photo/purple-space-stars-gm157639696-13691533");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Info Bar Styles */
+body.theme-space .info-bar {
+  background-color: #1a237e;
+  color: #e0e0ff;
+  border-bottom: 2px solid #7986cb;
+}
+
+body.theme-space .theme-btn {
+  background-color: #283593;
+}
+
+body.theme-space .theme-btn:hover {
+  background-color: #3949ab;
+}
+
+body.theme-space .theme-btn.active {
+  background-color: #7986cb;
+  color: #1a237e;
+  border: 2px solid #e0e0ff;
+}
+
+/* Login Form Section */
+body.theme-space .login-form {
+  background-color: rgba(38, 50, 128, 0.8);
+  border: 2px solid #7986cb;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+body.theme-space .login-form h2 {
+  color: #7986cb;
+  text-shadow: 0 0 5px #3d5afe;
+}
+
+body.theme-space .form-group input {
+  border: 2px solid #3d5afe;
+  background-color: rgba(13, 20, 53, 0.7);
+  color: #e0e0ff;
+}
+
+body.theme-space .login-btn {
+  background-color: #3d5afe;
+  color: white;
+  box-shadow: 0 0 10px #3d5afe;
+}
+
+body.theme-space .login-btn:hover {
+  background-color: #536dfe;
+}
+
+body.theme-space a {
+  color: #7986cb;
+}
+
+/* Calculator Styles */
+body.theme-space .calculator {
+  background-color: rgba(38, 50, 128, 0.8);
+  border: 2px solid #7986cb;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+body.theme-space .calculator-display {
+  background-color: rgba(13, 20, 53, 0.7);
+  border: 2px solid #3d5afe;
+  box-shadow: 0 0 10px #3d5afe;
+}
+
+body.theme-space .problem-display {
+  color: #7986cb;
+}
+
+body.theme-space .answer-display {
+  color: #e0e0ff;
+  text-shadow: 0 0 5px #3d5afe;
+}
+
+body.theme-space .calc-btn {
+  background-color: rgba(40, 53, 147, 0.9);
+  border: 1px solid #3d5afe;
+  color: #e0e0ff;
+  box-shadow: 0 0 5px #3d5afe;
+}
+
+body.theme-space .calc-btn:hover {
+  background-color: #3949ab;
+  box-shadow: 0 0 10px #3d5afe;
+}
+
+body.theme-space .calc-btn.operator {
+  background-color: #5c6bc0;
+  color: white;
+}
+
+body.theme-space .calc-btn.equal {
+  background-color: #00bcd4;
+  color: white;
+}
+
+body.theme-space .calc-btn.clear {
+  background-color: #f44336;
+  color: white;
+}
+
+body.theme-space .calc-btn.next {
+  background-color: #9c27b0;
+  color: white;
+}
+
+body.theme-space .info-card {
+  background-color: rgba(38, 50, 128, 0.8);
+  border: 2px solid #7986cb;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+body.theme-space .info-card h3 {
+  color: #7986cb;
+  text-shadow: 0 0 5px #3d5afe;
+}
+
+body.theme-space .progress-bar {
+  background-color: rgba(13, 20, 53, 0.7);
+  border: 1px solid #3d5afe;
+}
+
+body.theme-space .progress-fill {
+  background-color: #00bcd4;
+  box-shadow: 0 0 10px #00bcd4;
+}
+
+/* Footer Styles */
+body.theme-space footer {
+  background-color: #1a237e;
+  border-top: 2px solid #7986cb;
+}

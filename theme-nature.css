@@ -1,0 +1,141 @@
+/* theme-nature.css - Nature Theme for kidCalc */
+
+body.theme-nature {
+    background-color: #e8f5e9;
+    color: #33691e;
+    background-image: url('../images/kidcalc/nature-background.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Info Bar Styles */
+body.theme-nature .info-bar {
+    background-color: #2e7d32;
+    color: white;
+}
+
+body.theme-nature .theme-btn {
+    background-color: #388e3c;
+}
+
+body.theme-nature .theme-btn:hover {
+    background-color: #43a047;
+}
+
+body.theme-nature .theme-btn.active {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+}
+
+/* Login Form Section */
+body.theme-nature .login-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #81c784;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+body.theme-nature .login-form h2 {
+    color: #2e7d32;
+}
+
+body.theme-nature .form-group input {
+    border: 2px solid #a5d6a7;
+    background-color: white;
+}
+
+body.theme-nature .login-btn {
+    background-color: #43a047;
+    color: white;
+    border-radius: 25px;
+}
+
+body.theme-nature .login-btn:hover {
+    background-color: #2e7d32;
+}
+
+body.theme-nature a {
+    color: #1b5e20;
+}
+
+/* Calculator Styles */
+body.theme-nature .calculator {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #81c784;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+body.theme-nature .calculator-display {
+    background-color: #f1f8e9;
+    border: 2px solid #a5d6a7;
+}
+
+body.theme-nature .problem-display {
+    color: #558b2f;
+}
+
+body.theme-nature .answer-display {
+    color: #33691e;
+}
+
+body.theme-nature .calc-btn {
+    background-color: #c8e6c9;
+    border: 1px solid #a5d6a7;
+    color: #33691e;
+    border-radius: 8px;
+}
+
+body.theme-nature .calc-btn:hover {
+    background-color: #a5d6a7;
+}
+
+body.theme-nature .calc-btn.operator {
+    background-color: #66bb6a;
+    color: white;
+}
+
+body.theme-nature .calc-btn.equal {
+    background-color: #009688;
+    color: white;
+}
+
+body.theme-nature .calc-btn.clear {
+    background-color: #ef6c00;
+    color: white;
+}
+
+body.theme-nature .calc-btn.next {
+    background-color: #1565c0;
+    color: white;
+}
+
+body.theme-nature .info-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #81c784;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+body.theme-nature .info-card h3 {
+    color: #2e7d32;
+}
+
+body.theme-nature .progress-bar {
+    background-color: #e8f5e9;
+    border: 1px solid #a5d6a7;
+}
+
+body.theme-nature .progress-fill {
+    background-color: #4caf50;
+}
+
+body.theme-nature .decoration-image {
+    background-image: url('../images/kidcalc/nature-decoration.png');
+}
+
+/* Footer Styles */
+body.theme-nature footer {
+    background-color: #2e7d32;
+}
